@@ -54,6 +54,14 @@ We can also use Jenkins for our CI/CD pipeline, Jenkins will build all the docke
 
 ![image](https://user-images.githubusercontent.com/20236706/206540511-d3d35b28-00e5-4b7f-b717-c690b00e291c.png)
 
+### Tools
+
+- Docker
+- Azure DevOps or Jenkins
+- Nexus
+- Azure repo
+- Sonaqube
+- Azure Kubernetes Services (AKS)
 
 
 Prepared and designed by
