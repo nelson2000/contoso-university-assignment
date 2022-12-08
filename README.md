@@ -2,13 +2,13 @@
 
 ## Initial setup
 
-Backend - .NET Core API
-Front-end - ASP.NET MVC and Razor
-Database - Entity Framework - Local/generic 
-Testing - Moq and xUnit
-Messaging Service - Twillio
-Email Service - SendGrid
-API access - Json Web Token JWT
+- Backend - .NET Core API
+- Front-end - ASP.NET MVC and Razor
+- Database - Entity Framework - Local/generic 
+- Testing - Moq and xUnit
+- Messaging Service - Twillio
+- Email Service - SendGrid
+- API access - Json Web Token JWT
 
 ## Modification
 
