@@ -37,3 +37,5 @@ set up database context connection string, dependency injection for the database
 - for testing purpose, we can create a docker-compose file to spin up the  react dockerfile (build and run), .net api (build and run) and the sql server (run).
 
 ### Docker-compose set up
+![image](https://user-images.githubusercontent.com/20236706/206538634-e1edccc3-697b-4959-b22f-468d7f074aae.png)
+
