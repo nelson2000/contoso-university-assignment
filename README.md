@@ -64,9 +64,9 @@ We can also use Jenkins for our CI/CD pipeline, Jenkins will build all the docke
 - Azure Kubernetes Services (AKS)
 
 
-Prepared and designed by
+                                                    Prepared and designed by
 
 
-- Nelson Nwajie
-- Devops engineer
-- 8th December 2022
+                                                  - Nelson Nwajie
+                                                  - Devops engineer
+                                                  - 8th December 2022
