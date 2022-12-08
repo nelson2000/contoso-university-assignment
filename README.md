@@ -1,33 +1,39 @@
-# Contoso University [![Build Status](https://travis-ci.org/alimon808/contoso-university.svg?branch=master)](https://travis-ci.org/alimon808/contoso-university)
-Contoso University is a place for learning AspNetCore and related technologies.  This demo application is an amalgamation of smaller demo applications found in tutorials at [AspNetCore docs](https://docs.microsoft.com/en-us/aspnet/core/).  The tutorials are great at demonstrating isolated concepts, but issues surfaces when applying these concepts/techniques in a larger context.  The purpose of this demo application is to apply concepts/techniques learned from those tutorial into a single domain (i.e. university).
+# Contoso University Website Modification
 
-### ContosoUniversity.Web
-- Traditional Web App using MVC + Razor Pages
-- [Demo](http://contoso-university-web.adrianlimon.com)
-### ContosoUniversity.Api
-- Traditional Rest Api
-- [Demo](http://contoso-university-api.adrianlimon.com/)
-- Generate JWT Token at http://contoso-university-web.adrianlimon.com/api/token to access secure api content.  Requires registering via Web App.
-### Testing
-- Unit Testing using [Moq](https://github.com/Moq/moq4/wiki/Quickstart) and [xUnit](https://xunit.github.io/docs/getting-started-dotnet-core)
-- Integration Testing using TestHost and InMemoryDatabase
-- UI Testing using Selenium
-### Security
-- using Identity 2.0
-- Confirm Email using [SendGrid](sendgrid.com)
-- Confirm Phone using [Twilio](https://www.twilio.com/sms/api)
-- Two-Factor Authentication - [see tutorial](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/2fa)
-- OAuth 2 - Enable Google & Facebook logins
-- JWT (Json Web Token) - use to access secure API
-### Technologies
-- [ASP.NET Core 2.0](https://blogs.msdn.microsoft.com/webdev/2017/08/14/announcing-asp-net-core-2-0/)
-- Asp.Net Core Mvc 2.0 / Razor 2.0
-- Entity Framework Core 2.0 / Identity 2.0
-- Moq
-- xUnit
-- Twilio
-- SendGrid
+## Initial setup
 
-### Design Patterns
-- [Repository](https://social.technet.microsoft.com/wiki/contents/articles/36287.repository-pattern-in-asp-net-core.aspx)
-- [Unit Of Work](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/advanced)
+Backend - [.NET Core API]
+Front-end - [ASP.NET MVC and Razor]
+Database - [Entity Framework] Local/generic 
+Testing - Moq and xUnit
+Messaging Service - Twillio
+Email Service - SendGrid
+API access - Json Web Token JWT
+
+## Modification
+
+Front-end - React Framework as UI
+Backend - .NET Core API
+Database - MS SQL Server (external)
+
+set up API connections between React and ASP.NET as expected
+
+run the database container and setup database, username and password and create a schema.
+
+set up database context connection string, dependency injection for the database in the app-setting.json or process.cs file.
+
+
+
+
+### Database
+- Set up a stand-alone storage optimized instance as a DB server in cloud or on-prem. However for the purpose of testing and development, we can use the official MS SQL Server docker image on github
+
+### Create dockerfiles
+
+- we then create dockerfiles for REACT Framework from a node base 		image, set an appropriate publishing port.
+
+- create a multi-stage dockerfile for the ASP.NET Core API.
+
+- for testing purpose, we can create a docker-compose file to spin up the  react dockerfile (build and run), .net api (build and run) and the sql server (run).
+
+### Docker-compose set up
