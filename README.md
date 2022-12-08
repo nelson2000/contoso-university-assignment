@@ -38,18 +38,25 @@ set up database context connection string, dependency injection for the database
 
 ### Docker-compose set up
 ![image](https://user-images.githubusercontent.com/20236706/206538634-e1edccc3-697b-4959-b22f-468d7f074aae.png)
-### CI/CD Workflow for the website
-Now that we have tested using docker-compose and we are comfortable with the result.
 
-We can use Jenkins for our CI/CD pipeline, Jenkins will build all the dockerfiles into images  and incorprate the Moq, xUnit testing with pluggins in Jenkins, it will send build images to Kubernetes Cluster for deployment  as pods artifacts to Sonarqube  or another server for code quality check and to Nexus for artifact storage.
+### CI/CD Workflow for the website
+Now that we have tested using docker-compose and we are comfortable with the result, we can build the images and deploy the containers in kubernetes clusters using Azure DevOps.
+
+## CI/CD using Azure DevOps
+We can easily adapt this CI/CD pipeline to Azure DevOps, by pulling dockerfiles for all the stack from github and building and releasing in a AKS, Azure managed kubernetes Cluster. 
+
+![image](https://user-images.githubusercontent.com/20236706/206547389-77a364df-6784-4321-8ac6-e08449e3450e.png)
+
+
+
+
+We can also use Jenkins for our CI/CD pipeline, Jenkins will build all the dockerfiles into images  and incorprate the Moq, xUnit testing with pluggins in Jenkins, it will send build images to Kubernetes Cluster for deployment  as pods artifacts to Sonarqube  or another server for code quality check and to Nexus for artifact storage.
 
 CI/CD Pipeline flow
 
 ![image](https://user-images.githubusercontent.com/20236706/206540511-d3d35b28-00e5-4b7f-b717-c690b00e291c.png)
 
-There is much more to do, but considering the limited time, this is all i can come up with.
 
-Thank you
 
 Prepared and designed by
 
