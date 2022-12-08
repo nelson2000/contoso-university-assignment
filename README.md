@@ -54,6 +54,6 @@ Thank you
 Prepared and designed by
 
 
-Nelson Nwajie
-Devops engineer
-8th December 2022
+- Nelson Nwajie
+- Devops engineer
+- 8th December 2022
